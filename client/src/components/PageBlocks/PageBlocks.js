@@ -1,4 +1,5 @@
 import React from "react";
+import './PageBlocks.css'
 
 class PageBlocks extends React.Component {
   state = { bloccs: [] }
@@ -11,13 +12,17 @@ class PageBlocks extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Blocks</h1>
-        <ul>
+      <div className="blocks-page-container flex-container">
+        <div className="title-container"><h1>Block Info</h1></div>
+        <main>
           {this.state.bloccs.map(blocc => (
-            <li key={blocc.timestamp}>{ `${blocc.hash} ${blocc.timestamp} ${blocc.nance}` }</li>
+            <div className="blocc-container flex-container" key={blocc.timestamp}>
+              <p className="blocc-text">
+                { `Hash: ${blocc.hash} Timestamp: ${blocc.timestamp}` }
+              </p>
+            </div>
           ))}
-        </ul>
+        </main>
       </div>
     );
   }

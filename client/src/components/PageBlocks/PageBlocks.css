@@ -1,0 +1,42 @@
+
+
+.blocks-page-container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    background: #212938;
+    color: white;
+    height: 392px;
+    width: 457px;
+    overflow: auto;
+    position: relative;
+    float: right;
+    padding: 5px 5px 5px 5px;
+    
+}
+.blocc-container {
+    display: flex;
+    flex-direction: column;
+    height: 12%;
+    width:100%;
+    margin: 10px 10px 10px 10px;
+    background: grey;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-color: aliceblue;
+    border: solid 1px;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+}
+.title-container {
+    display: flex;
+    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    position: relative;
+
+}
+.blocc-text {
+    word-wrap: break-word;
+}

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --watchAll",
     "dev-test": "nodemon dev-test",
-    "start": "node ./app",
+    "start": "concurrently \"nodemon ./app\" \"npm run client\"",
+    "client": "node start-client.js",
     "dev": "nodemon ./app"
   },
   "jest": {
@@ -16,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "nodemon": "^1.18.3"
   },
   "dependencies": {

@@ -1,0 +1,11 @@
+.footer-container {
+    background: #212938;
+    color: white;
+    float: unset;
+    position: relative;
+    clear:both;
+    height:150px;
+    margin-top: -150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

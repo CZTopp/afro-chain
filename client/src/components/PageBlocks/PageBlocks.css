@@ -12,6 +12,8 @@
     position: relative;
     float: right;
     padding: 5px 5px 5px 5px;
+    border: white solid 1px;
+
     
 }
 .blocc-container {

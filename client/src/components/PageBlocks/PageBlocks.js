@@ -17,9 +17,12 @@ class PageBlocks extends React.Component {
         <main>
           {this.state.bloccs.map(blocc => (
             <div className="blocc-container flex-container" key={blocc.timestamp}>
-              <p className="blocc-text">
+              <div className="blocc-text">
                 { `Hash: ${blocc.hash} Timestamp: ${blocc.timestamp}` }
-              </p>
+              </div>
+              {/* <p className="blocc-text">
+                { `Hash: ${blocc.hash} Timestamp: ${blocc.timestamp}` }
+              </p> */}
             </div>
           ))}
         </main>
